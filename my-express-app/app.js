@@ -71,7 +71,7 @@ app.get("/profile/:username", function (req, res) {
     res.send(`welcome, ${req.params.username}`);
 })
 app.get("/author/:username/:age", function (req, res) {
-    res.send(`welcome, ${req.params.username.age}`);
+    res.send(`welcome, ${req.params.username} of age ${req.params.age}`);
 })
 
 app.listen(3000, function () {
